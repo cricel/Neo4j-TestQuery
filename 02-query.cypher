@@ -76,13 +76,12 @@ SKIP 1
 LIMIT 3
 
 // Orderby
-MATCH (player:PLAYER) 
+MATCH (player:PLAYER)
 WHERE player.height >= 2
 RETURN player
-SKIP 1
 ORDER BY player.height DESC
+SKIP 1
 LIMIT 3
-
 
 // Query for multiple nodes
 MATCH (coach:COACH), (player:PLAYER)
