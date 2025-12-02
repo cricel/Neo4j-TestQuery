@@ -5,6 +5,9 @@
 // All nodes //
 MATCH (n) RETURN n
 
+// All nodes with connections //
+MATCH (n)-[r]-(m) RETURN n, r, m;
+
 // All nodes with specific label //
 MATCH (player:PLAYER) RETURN player
 
